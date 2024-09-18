@@ -13,4 +13,5 @@ langchain_groq
 langchain_core
 pydantic
 validators
+tavily-python
 xformers
