@@ -21,8 +21,8 @@ with st.sidebar:
     
     st.header("Model Settings")
     temperature = st.slider("Temperature", min_value=0.0, max_value=1.0, value=0.0)
-    max_tokens = st.slider("Max Tokens", min_value=50, max_value=6000, value=4500)
-    tavily_k = st.slider("Tavily Search Content", min_value=1, max_value=7, value=3)
+    max_tokens = st.slider("Max Tokens", min_value=50, max_value=5000, value=3500)
+    tavily_k = st.slider("Tavily Search Content", min_value=1, max_value=7, value=2)
     
     # Input fields for API keys
     openai_api_key = st.text_input("OpenAI API Key", type="password")
@@ -62,7 +62,7 @@ with st.sidebar:
     
 # Initialize Retriever with the Tavily API Key
 if tavily_api_key:
-    retriever = TavilySearchAPIRetriever(k=tavily_k, include_raw_content=True, tavily_api_key=tavily_api_key)
+    retriever = TavilySearchAPIRetriever(k=tavily_k, include_raw_content=True, api_key=tavily_api_key)
 else:
     st.warning("Please provide Tavily API Key.")
 
