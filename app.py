@@ -239,26 +239,27 @@ Context: {context}
 """
 
 kose_yazisindan_haber_prompt = """
-Context içerisinde yer alan köşe yazısını özetleyerek haber içeriğine dönüştürmen bekleniyor. Yazarın yazısına saygı duymalı ve bağlamı asla bozmamalısın. 
-Türkçe düzgün kullanılmalı, ve profosyonel bir haber dili olmalı.
+Context içerisinde yer alan haber metinlerinden yola çıkarak yeni ve özgün bir haber oluşturman gerekiyor. Bu haber, tamamen orijinal olmalı ve intihal izlenimi vermemeli. Türkçe dil bilgisine uygun, akıcı ve profesyonel bir üslup kullanılmalı.
 
 BAŞLIK
 
-8 kelimeyi geçmeyecek şekilde dikkat çekici, merak uyandıran başlıklar oluştur. En az 5 tane öneri hazırla.
+Haber metninin özünü yansıtacak, kısa ve çarpıcı bir başlık oluştur. Başlık 8-12 kelimeyi geçmesin. Haber hakkında merak uyandıracak ve okuyucuyu içeriğe yönlendirecek anahtar kelimeler içer. Öne çıkan olayları ve konuları basit, net bir dille ifade et.  Cümleler kısa ve öz olsun, karmaşık yapılardan kaçın. Başlıklarda belirsiz özne kullanarak gizem yarat, doğrudan ve çekici bir mesaj ver.
+
+Haber metninden yola çıkarak EN AZ 5 FARKLI başlık önerisi sun. Her bir başlık haberin farklı yönlerini vurgulayan çeşitli açılardan yaklaşmalı.
 
 SPOT
 
-Haberin ana konusunu kısa ve dikkat çekici bir şekilde özetle. Okuyucunun ilgisini çekecek ama tam olarak içeriği açık etmeyecek bir dil kullan. Haber hakkında ipucu ver, ancak ayrıntıya girme. Anahtar kelimeleri ekleyerek metni SEO uyumlu hale getir.
+Spot, başlıkla uyumlu ve haberin ana detaylarını özetler nitelikte olmalı. 1-2 cümle içinde kim, ne, nerede, ne zaman, nasıl, neden gibi soruların cevaplarını ver. Okuyucunun ilgisini çekecek ancak haberin tamamını açık etmeyecek bir dil kullan. Doğal şekilde anahtar kelimeler içermeli ve SEO uyumlu olmalı.
 
 HABER METNİ
 
-XXXXXXX yazarı XXXXXXX XXXXXX "YYYYYYY  YYYYYYYY’ başlıklı köşesinde çok önemli noktalara dikkat çekti.
+XXXXXXX yazarı XXXXXXX XXXXXX "YYYYYYY  YYYYYYYY’ başlıklı köşesinde çok önemli noktalara dikkat çekti. 
 
-Bu köşe yazısını daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" ve benzeri ifadeleri çeşitli şekillerde kullanarak habere metnine dönüştür.
+Bu köşe yazısını daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" ve benzeri ifadeleri çeşitli şekillerde kullanarak habere metnine dönüştür. 
 
-Kritik noktaları ve özel isimleri **bold** yap.
+Kritik noktaları ve özel isimleri bold yap.
 
-Aktif cümle yapıları kullan. Pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur.
+Aktif cümle yapıları kullan. Pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. 
 
 SEO kurallarına uy. Anahtar kelime yoğunluğuna dikkat et. Meta açıklamaları, başlıklar ve alt başlıkları doğru kullan.
 
