@@ -114,32 +114,54 @@ Konu: {konu}
 """
 
 bir_metinden_haber_prompt = """
-Context içerisinde yer alan haber metnini kullanarak yeni bir haber yaratman bekleniyor. Bu haber özgün görünmeli ve intihal hissi yaratmamalı.
-Türkçe düzgün kullanılmalı, ve profosyonel bir haber dili olmalı.
+Context içerisinde yer alan haber metinlerinden yola çıkarak yeni ve özgün bir haber oluşturman gerekiyor. Bu haber, tamamen orijinal olmalı ve intihal izlenimi vermemeli. Türkçe dil bilgisine uygun, akıcı ve profesyonel bir üslup kullanılmalı.
 
 BAŞLIK
+ 
+Haber metninin özünü yansıtacak, kısa ve çarpıcı bir başlık oluştur. Başlık 8-12 kelimeyi geçmesin. Haber hakkında merak uyandıracak ve okuyucuyu içeriğe yönlendirecek anahtar kelimeler içer. Öne çıkan olayları ve konuları basit, net bir dille ifade et.  Cümleler kısa ve öz olsun, karmaşık yapılardan kaçın. Başlıklarda belirsiz özne kullanarak gizem yarat, doğrudan ve çekici bir mesaj ver.
 
-8 kelimeyi geçmeyecek şekilde dikkat çekici, merak uyandıran başlıklar oluştur. En az 5 tane öneri hazırla.
+Haber metninden yola çıkarak EN AZ 5 FARKLI başlık önerisi sun. Her bir başlık haberin farklı yönlerini vurgulayan çeşitli açılardan yaklaşmalı.
 
 SPOT
 
-Haberin ana konusunu kısa ve dikkat çekici bir şekilde özetle. Okuyucunun ilgisini çekecek ama tam olarak içeriği açık etmeyecek bir dil kullan. Haber hakkında ipucu ver, ancak ayrıntıya girme. Anahtar kelimeleri ekleyerek metni SEO uyumlu hale getir.
+Spot, başlıkla uyumlu ve haberin ana detaylarını özetler nitelikte olmalı. 1-2 cümle içinde kim, ne, nerede, ne zaman, nasıl, neden gibi soruların cevaplarını ver. Okuyucunun ilgisini çekecek ancak haberin tamamını açık etmeyecek bir dil kullan. Doğal şekilde anahtar kelimeler içermeli ve SEO uyumlu olmalı.
 
 HABER METNİ
 
-Metni özgünleştir. İntihalden tamamen arındır. Haber formatına sadık kal.
+PARAGRAFLAR İÇİN TALİMATLAR
 
-Paragrafları kısa tut. Cümleler 12 kelimeyi geçmemeli. "Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" ve benzeri yüklemler kullanma.
+Metni tamamen özgün hale getir ve intihalden arındır. 
 
-Aktif cümle yapıları kullan. Pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. Aynı ifadeleri tekrarlama.
+Paragrafları kısa tut, cümleler 12 kelimeyi geçmesin.
 
-Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" ve benzeri ifadeleri konuşma, beyan, demeç, açıklama gibi metinleri bölerken sık sık kullan.
+Kritik noktaları ve özel isimleri bold yap.
 
-Cümleler arasında "buna ek olarak", "ancak", "dolayısıyla", "öte yandan" gibi geçiş kelimelerine yer ver.
+"Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" gibi fiillerden kaçın.  
+ 
+Aktif cümle yapıları kullan, pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. 
 
-Kritik noktaları ve özel isimleri **bold** yap.
+Haberin akışını sağlamak için "ancak", "dolayısıyla", "buna ek olarak" gibi geçiş kelimelerini kullan. 
 
-Paragraflar arasında HABER BAŞLIKLARI kullanarak net ve özgün alt başlıklar oluştur.
+Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" gibi ifadeleri konuşma, beyan ve demeç bölümlerinde sıkça kullan.
+
+Ara başlıkları büyük harflerle yaz. 
+
+Gereksiz tekrarlar yapma. Aynı ifadeleri tekrarlama.
+
+
+Giriş (İlk Paragraf)
+
+Haberin en önemli detaylarını hızlı ve öz bir şekilde özetle. Kim, ne, nerede, ne zaman sorularına net cevap ver. İlk paragraf 30 kelimeyi geçmesin.
+
+Gelişme (Orta Paragraflar) 
+
+Haberi detaylandırırken her paragraf kısa (3-4 cümle) ve net olmalı. 
+
+Sonuç (Son Paragraf)
+
+Haberin etkileri, sonuçları ya da gelecekte atılacak adımları özetle. Yorum veya tahminde bulunma, yalnızca bilgi ver.
+
+Dil ve tarz
 
 SEO kurallarına uy. Anahtar kelime yoğunluğuna dikkat et. Meta açıklamaları, başlıklar ve alt başlıkları doğru kullan.
 
@@ -149,35 +171,65 @@ Context: {context}
 """
 
 birden_fazla_metinden_haber_prompt = """
-Context içerisinde yer alan farklı kaynaklardan derlenmiş haber içeriklerini kullanarak yeni ve özgün bir içerik yaratman bekleniyor.
-
-Farklı kaynaklardan derlenmiş içerikler aynı haberi farklı şekilde yazılmış versiyonları olabileceği gibi, farklı şeylerden bahsediyormuş gibi görünen ama belirli bir bağlamda birbiriyle ilişkili içeriklerde olabilir.
-
-Türkçe düzgün kullanılmalı, ve profosyonel bir haber dili olmalı.
+Context içerisinde yer alan haber metinlerinden yola çıkarak yeni ve özgün bir haber oluşturman gerekiyor. Bu haber, tamamen orijinal olmalı ve intihal izlenimi vermemeli. Türkçe dil bilgisine uygun, akıcı ve profesyonel bir üslup kullanılmalı.
 
 BAŞLIK
+ 
+Haber metninin özünü yansıtacak, kısa ve çarpıcı bir başlık oluştur. Başlık 8-12 kelimeyi geçmesin. Haber hakkında merak uyandıracak ve okuyucuyu içeriğe yönlendirecek anahtar kelimeler içer. Öne çıkan olayları ve konuları basit, net bir dille ifade et.  Cümleler kısa ve öz olsun, karmaşık yapılardan kaçın. Başlıklarda belirsiz özne kullanarak gizem yarat, doğrudan ve çekici bir mesaj ver.
 
-8 kelimeyi geçmeyecek şekilde dikkat çekici, merak uyandıran başlıklar oluştur. En az 5 tane öneri hazırla.
+Haber metninden yola çıkarak EN AZ 5 FARKLI başlık önerisi sun. Her bir başlık haberin farklı yönlerini vurgulayan çeşitli açılardan yaklaşmalı.
 
 SPOT
 
-Haberin ana konusunu kısa ve dikkat çekici bir şekilde özetle. Okuyucunun ilgisini çekecek ama tam olarak içeriği açık etmeyecek bir dil kullan. Haber hakkında ipucu ver, ancak ayrıntıya girme. Anahtar kelimeleri ekleyerek metni SEO uyumlu hale getir.
+Spot, başlıkla uyumlu ve haberin ana detaylarını özetler nitelikte olmalı. 1-2 cümle içinde kim, ne, nerede, ne zaman, nasıl, neden gibi soruların cevaplarını ver. Okuyucunun ilgisini çekecek ancak haberin tamamını açık etmeyecek bir dil kullan. Doğal şekilde anahtar kelimeler içermeli ve SEO uyumlu olmalı.
 
 HABER METNİ
 
-Metni ya da metinleri özgünleştir. Metinleri birbirleriyle harmanla. İntihalden tamamen arındır. Haber formatına sadık kal.
+PARAGRAFLAR İÇİN TALİMATLAR
 
-Paragrafları kısa tut. Cümleler 12 kelimeyi geçmemeli. "Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" ve benzeri yüklemler kullanma.
+Metinleri tamamen özgün hale getir ve intihalden arındır.  
+Birbirlerine harmanla ve metinlere şu talimatları uygula:
 
-Aktif cümle yapıları kullan. Pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. Aynı ifadeleri tekrarlama.
+Aynı konudaki birden fazla metni kullanarak zenginleştirilmiş, kapsamlı bir haber oluştur.
+Metinlerin ortak noktalarını tespit et ve bu unsurları haberin ana eksenine yerleştir. Farklı metinlerde geçen ek bilgileri ve çeşitli bakış açılarını kullanarak haberin detaylarını genişlet.
 
-Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" ve benzeri ifadeleri konuşma, beyan, demeç, açıklama gibi metinleri bölerken sık sık kullan.
+Tematik Farklılıkları Kullan
 
-Cümleler arasında "buna ek olarak", "ancak", "dolayısıyla", "öte yandan" gibi geçiş kelimelerine yer ver.
+Metinlerde yer alan farklı tema ve bilgileri vurgulayarak haberi daha derinlemesine incele. Bu sayede haber sadece bir kaynağa bağlı kalmadan, daha zengin ve kapsamlı bir içerik sunar. Ancak temalar arasındaki tutarlılığı korumaya dikkat et.
 
-Kritik noktaları ve özel isimleri **bold** yap.
+Bilgilerin Uyumluluğuna Dikkat Et
 
-Paragraflar arasında HABER BAŞLIKLARI kullanarak net ve özgün alt başlıklar oluştur.
+Farklı kaynaklardaki bilgilerin uyumlu olmasına özen göster. Tutarsızlıkları fark ettiğinde ya doğrulanmış bilgiyi kullan ya da haberde denge kurarak tüm farklı görüşleri doğru şekilde yansıt. Gerektiğinde farklı perspektifleri bağlayıcı geçişlerle sun
+
+Paragrafları kısa tut, cümleler 12 kelimeyi geçmesin.
+
+Kritik noktaları ve özel isimleri bold yap.
+
+"Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" gibi fiillerden kaçın.  
+ 
+Aktif cümle yapıları kullan, pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. 
+
+Haberin akışını sağlamak için "ancak", "dolayısıyla", "buna ek olarak" gibi geçiş kelimelerini kullan. 
+
+Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" gibi ifadeleri konuşma, beyan ve demeç bölümlerinde sıkça kullan.
+
+Ara başlıkları büyük harflerle yaz. 
+
+Gereksiz tekrarlar yapma. Aynı ifadeleri tekrarlama.
+
+Giriş (İlk Paragraf)
+
+Haberin en önemli detaylarını hızlı ve öz bir şekilde özetle. Kim, ne, nerede, ne zaman sorularına net cevap ver. İlk paragraf 30 kelimeyi geçmesin.
+
+Gelişme (Orta Paragraflar) 
+
+Haberi detaylandırırken her paragraf kısa (3-4 cümle) ve net olmalı. 
+
+Sonuç (Son Paragraf)
+
+Haberin etkileri, sonuçları ya da gelecekte atılacak adımları özetle. Yorum veya tahminde bulunma, yalnızca bilgi ver.
+
+Dil ve tarz
 
 SEO kurallarına uy. Anahtar kelime yoğunluğuna dikkat et. Meta açıklamaları, başlıklar ve alt başlıkları doğru kullan.
 
