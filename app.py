@@ -69,6 +69,7 @@ else:
 
 
 
+
 # Define all prompts
 seo_content_prompt = """
 Sana verilen contexti kullanarak istenen konu hakkında SEO içerik üretmen bekleniyor.
@@ -118,54 +119,36 @@ Context içerisinde yer alan haber metinlerinden yola çıkarak yeni ve özgün 
 
 BAŞLIK
  
-Haber metninin özünü yansıtacak, kısa ve çarpıcı bir başlık oluştur. Başlık 8-12 kelimeyi geçmesin. Haber hakkında merak uyandıracak ve okuyucuyu içeriğe yönlendirecek anahtar kelimeler içer. Öne çıkan olayları ve konuları basit, net bir dille ifade et.  Cümleler kısa ve öz olsun, karmaşık yapılardan kaçın. Başlıklarda belirsiz özne kullanarak gizem yarat, doğrudan ve çekici bir mesaj ver.
-
-Haber metninden yola çıkarak EN AZ 5 FARKLI başlık önerisi sun. Her bir başlık haberin farklı yönlerini vurgulayan çeşitli açılardan yaklaşmalı.
+* Başlıkta belirsizlik yarat, net olmayan ifadeler kullan. Başlık en fazla 12 kelime olsun, içeriği doğru yansıtsın. Soru cümlesi kullanma. Pasif yapı kullanma. Her bir başlık haberin farklı yönlerini vurgulayan çeşitli açılardan yaklaşmalı. 5 farklı başlık önerisi sun. Nokta ile ayır. 
 
 SPOT
 
-Spot, başlıkla uyumlu ve haberin ana detaylarını özetler nitelikte olmalı. 1-2 cümle içinde kim, ne, nerede, ne zaman, nasıl, neden gibi soruların cevaplarını ver. Okuyucunun ilgisini çekecek ancak haberin tamamını açık etmeyecek bir dil kullan. Doğal şekilde anahtar kelimeler içermeli ve SEO uyumlu olmalı.
+* Spot, başlıkla uyumlu ve haberin ana detaylarını özetler nitelikte olmalı. 1-2 cümle içinde kim, ne, nerede, ne zaman, nasıl, neden gibi soruların cevaplarını ver. Okuyucunun ilgisini çekecek ancak haberin tamamını açık etmeyecek bir dil kullan. Doğal şekilde anahtar kelimeler içermeli ve SEO uyumlu olmalı.
 
 HABER METNİ
 
 PARAGRAFLAR İÇİN TALİMATLAR
 
-Metni tamamen özgün hale getir ve intihalden arındır. 
-
-Paragrafları kısa tut, cümleler 12 kelimeyi geçmesin.
-
-Kritik noktaları ve özel isimleri bold yap.
-
-"Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" gibi fiillerden kaçın.  
- 
-Aktif cümle yapıları kullan, pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. 
-
-Haberin akışını sağlamak için "ancak", "dolayısıyla", "buna ek olarak" gibi geçiş kelimelerini kullan. 
-
-Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" gibi ifadeleri konuşma, beyan ve demeç bölümlerinde sıkça kullan.
-
-Ara başlıkları büyük harflerle yaz. 
-
-Gereksiz tekrarlar yapma. Aynı ifadeleri tekrarlama.
-
+* Metni tamamen özgün hale getir ve intihalden arındır. 
+* Paragrafları kısa tut, cümleler 12 kelimeyi geçmesin.
+* Kritik noktaları ve özel isimleri bold yap.
+* "Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" gibi fiillerden kaçın.  
+* Aktif cümle yapıları kullan, pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. 
+* Haberin akışını sağlamak için "ancak", "dolayısıyla", "buna ek olarak" gibi geçiş kelimelerini kullan. 
+* Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" gibi ifadeleri konuşma, beyan ve demeç bölümlerinde sıkça kullan.
+* Ara başlıkları büyük harflerle yaz. 
+* Gereksiz tekrarlar yapma. Aynı ifadeleri tekrarlama.
+*  SEO kurallarına uy. Anahtar kelime yoğunluğuna dikkat et. Meta açıklamaları, başlıklar ve alt başlıkları doğru kullan.
+* Metne dışarıdan yorum ya da sonuç ekleme.
 
 Giriş (İlk Paragraf)
 
-Haberin en önemli detaylarını hızlı ve öz bir şekilde özetle. Kim, ne, nerede, ne zaman sorularına net cevap ver. İlk paragraf 30 kelimeyi geçmesin.
+* Haberin en önemli detaylarını hızlı ve öz bir şekilde özetle. Kim, ne, nerede, ne zaman sorularına net cevap ver. 
+* İlk paragraf 30 kelimeyi geçmesin.
 
 Gelişme (Orta Paragraflar) 
 
-Haberi detaylandırırken her paragraf kısa (3-4 cümle) ve net olmalı. 
-
-Sonuç (Son Paragraf)
-
-Haberin etkileri, sonuçları ya da gelecekte atılacak adımları özetle. Yorum veya tahminde bulunma, yalnızca bilgi ver.
-
-Dil ve tarz
-
-SEO kurallarına uy. Anahtar kelime yoğunluğuna dikkat et. Meta açıklamaları, başlıklar ve alt başlıkları doğru kullan.
-
-Metne dışarıdan yorum ya da sonuç ekleme.
+* Haberi detaylandırırken her paragraf kısa (3-4 cümle) ve net olmalı.
 
 Context: {context}
 """
@@ -175,66 +158,50 @@ Context içerisinde yer alan haber metinlerinden yola çıkarak yeni ve özgün 
 
 BAŞLIK
  
-Haber metninin özünü yansıtacak, kısa ve çarpıcı bir başlık oluştur. Başlık 8-12 kelimeyi geçmesin. Haber hakkında merak uyandıracak ve okuyucuyu içeriğe yönlendirecek anahtar kelimeler içer. Öne çıkan olayları ve konuları basit, net bir dille ifade et.  Cümleler kısa ve öz olsun, karmaşık yapılardan kaçın. Başlıklarda belirsiz özne kullanarak gizem yarat, doğrudan ve çekici bir mesaj ver.
-
-Haber metninden yola çıkarak EN AZ 5 FARKLI başlık önerisi sun. Her bir başlık haberin farklı yönlerini vurgulayan çeşitli açılardan yaklaşmalı.
+* Başlıkta belirsizlik yarat, net olmayan ifadeler kullan. Başlık en fazla 12 kelime olsun, içeriği doğru yansıtsın. Soru cümlesi kullanma. Pasif yapı kullanma. Her bir başlık haberin farklı yönlerini vurgulayan çeşitli açılardan yaklaşmalı. 5 farklı başlık önerisi sun. Nokta ile ayır. 
 
 SPOT
 
-Spot, başlıkla uyumlu ve haberin ana detaylarını özetler nitelikte olmalı. 1-2 cümle içinde kim, ne, nerede, ne zaman, nasıl, neden gibi soruların cevaplarını ver. Okuyucunun ilgisini çekecek ancak haberin tamamını açık etmeyecek bir dil kullan. Doğal şekilde anahtar kelimeler içermeli ve SEO uyumlu olmalı.
-
+* Spot, başlıkla uyumlu ve haberin ana detaylarını özetler nitelikte olmalı. 1-2 cümle içinde kim, ne, nerede, ne zaman, nasıl, neden gibi soruların cevaplarını ver. Okuyucunun ilgisini çekecek ancak haberin tamamını açık etmeyecek bir dil kullan. Doğal şekilde anahtar kelimeler içermeli ve SEO uyumlu olmalı.
 HABER METNİ
 
-PARAGRAFLAR İÇİN TALİMATLAR
 
-Metinleri tamamen özgün hale getir ve intihalden arındır.  
+* Metinleri tamamen özgün hale getir ve intihalden arındır.  
+
 Birbirlerine harmanla ve metinlere şu talimatları uygula:
 
-Aynı konudaki birden fazla metni kullanarak zenginleştirilmiş, kapsamlı bir haber oluştur.
+* Aynı konudaki birden fazla metni kullanarak zenginleştirilmiş, kapsamlı bir haber oluştur.
 Metinlerin ortak noktalarını tespit et ve bu unsurları haberin ana eksenine yerleştir. Farklı metinlerde geçen ek bilgileri ve çeşitli bakış açılarını kullanarak haberin detaylarını genişlet.
 
 Tematik Farklılıkları Kullan
 
-Metinlerde yer alan farklı tema ve bilgileri vurgulayarak haberi daha derinlemesine incele. Bu sayede haber sadece bir kaynağa bağlı kalmadan, daha zengin ve kapsamlı bir içerik sunar. Ancak temalar arasındaki tutarlılığı korumaya dikkat et.
+* Metinlerde yer alan farklı tema ve bilgileri vurgulayarak haberi daha derinlemesine incele. Bu sayede haber sadece bir kaynağa bağlı kalmadan, daha zengin ve kapsamlı bir içerik sunar. Ancak temalar arasındaki tutarlılığı korumaya dikkat et.
 
 Bilgilerin Uyumluluğuna Dikkat Et
 
-Farklı kaynaklardaki bilgilerin uyumlu olmasına özen göster. Tutarsızlıkları fark ettiğinde ya doğrulanmış bilgiyi kullan ya da haberde denge kurarak tüm farklı görüşleri doğru şekilde yansıt. Gerektiğinde farklı perspektifleri bağlayıcı geçişlerle sun
+* Farklı kaynaklardaki bilgilerin uyumlu olmasına özen göster. Tutarsızlıkları fark ettiğinde ya doğrulanmış bilgiyi kullan ya da haberde denge kurarak tüm farklı görüşleri doğru şekilde yansıt. Gerektiğinde farklı perspektifleri bağlayıcı geçişlerle sun
 
-Paragrafları kısa tut, cümleler 12 kelimeyi geçmesin.
+PARAGRAFLAR İÇİN TALİMATLAR
 
-Kritik noktaları ve özel isimleri bold yap.
-
-"Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" gibi fiillerden kaçın.  
- 
-Aktif cümle yapıları kullan, pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. 
-
-Haberin akışını sağlamak için "ancak", "dolayısıyla", "buna ek olarak" gibi geçiş kelimelerini kullan. 
-
-Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" gibi ifadeleri konuşma, beyan ve demeç bölümlerinde sıkça kullan.
-
-Ara başlıkları büyük harflerle yaz. 
-
-Gereksiz tekrarlar yapma. Aynı ifadeleri tekrarlama.
+* Metni tamamen özgün hale getir ve intihalden arındır. 
+* Paragrafları kısa tut, cümleler 12 kelimeyi geçmesin.
+* Kritik noktaları ve özel isimleri bold yap.
+* "Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" gibi fiillerden kaçın.  
+ * Aktif cümle yapıları kullan, pasif yapılardan kaçın. Bu sayede daha dinamik ve doğrudan cümleler oluştur. 
+* Haberin akışını sağlamak için "ancak", "dolayısıyla", "buna ek olarak" gibi geçiş kelimelerini kullan. 
+* Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" gibi ifadeleri konuşma, beyan ve demeç bölümlerinde sıkça kullan.
+* Ara başlıkları büyük harflerle yaz. 
+* Gereksiz tekrarlar yapma. Aynı ifadeleri tekrarlama.
+*  SEO kurallarına uy. Anahtar kelime yoğunluğuna dikkat et. Meta açıklamaları, başlıklar ve alt başlıkları doğru kullan.
+* Metne dışarıdan yorum ya da sonuç ekleme.
 
 Giriş (İlk Paragraf)
 
-Haberin en önemli detaylarını hızlı ve öz bir şekilde özetle. Kim, ne, nerede, ne zaman sorularına net cevap ver. İlk paragraf 30 kelimeyi geçmesin.
+* Haberin en önemli detaylarını hızlı ve öz bir şekilde özetle. Kim, ne, nerede, ne zaman sorularına net cevap ver. İlk paragraf 30 kelimeyi geçmesin.
 
 Gelişme (Orta Paragraflar) 
 
-Haberi detaylandırırken her paragraf kısa (3-4 cümle) ve net olmalı. 
-
-Sonuç (Son Paragraf)
-
-Haberin etkileri, sonuçları ya da gelecekte atılacak adımları özetle. Yorum veya tahminde bulunma, yalnızca bilgi ver.
-
-Dil ve tarz
-
-SEO kurallarına uy. Anahtar kelime yoğunluğuna dikkat et. Meta açıklamaları, başlıklar ve alt başlıkları doğru kullan.
-
-Metne dışarıdan yorum ya da sonuç ekleme.
-
+* Haberi detaylandırırken her paragraf kısa (3-4 cümle) ve net olmalı.
 Context: {context}
 """
 
@@ -271,21 +238,85 @@ Context: {context}
 
 
 
+# New prompt for "HABERİ YENİDEN YAZMA"
+haberi_yeniden_yazma_prompt = """
+Bu metni intihalden tamamen kurtararak habere dönüştür. Başlık, spot ve haber metni şeklinde. 
+Ara başlıkları büyük harflerle yaz. Kritik noktaları ve özel isimleri bold yap. Cümleler 12 kelimeyi geçmesin.
+Aktif cümle yapıları kullan, pasif yapılardan kaçın.
 
+BAŞLIK YAZMA
 
-# Add selection for choosing the prompt
+1-Volkan Demirel son noktayı koydu!
+2-Adana Demirspor yine eli boş döndü!
+3-Volkan kritik teklifi kabul etmedi!
+4-Aziz Yıldırım Okan Buruk'la ne konuştu. Ortaya çıktı
+5-Fenerbahçe'de Mourinho'yu şok eden ayrılık. Bırakıp gitti
+6-Mourinho'dan flaş Ali Koç ve derbi açıklaması. Saygısızlık yapıldı
+7-Dursun Özbek Mourinho'ya 'Yatarak' karşılık verdi
+8-Hacıosmanoğlu Ali Koç'a küçük dilini yutturdu
+9-Acun Ilıcalı Bayramiç'te sessiz sedasız çalışmalara başladı
+10-Böyle şike görülmedi. 4-1 yenilmesi gerekiyordu 4-1 yenildi
+11-Ebrar Karakurt Rusya'yı ayağa kaldırdı. Yok artık
+12-Merkezefendi maça çıkarmadan gönderdi
+13-Arda Güler 15 dakikada Ancelotti'yi kurtardı
+14-Mustafa Denizli imzayı attı
+15-Sergen Yalçın yeni adresini açıkladı
+16-Mustafa Sarıgül hastaneye koştu. Serhat Akın'ın odasından ilk videoyu paylaştı
+17-Van Bronckhorst maçı sattı mı? Sırrı maçtan önce söylediklerinde saklı
+18-Temmuz'da kıyamet kopacak!
+19-Yüzde 50 zam geldi. Yarından itibaren geçerli!
+20-Emekli zil takıp oynayacak! Bayram ikramiyesi netleşti, Nisan’da hesaplara yatacak
+21-Kuyumcular Artık Satın Almıyor. 81 İlde Altın İçin Yeni Uygulama Başlıyor
+22-Dolarda gece yarısı vurgununu kim yaptı?
+23-Parasını Altında Tutanlara Kötü Haber
+24-Altın İthalatında Yıllar Sonra Bir İlk
+25-Yarın Sabah Başlıyor. Altın Fiyatlarında Haftalar Sonra Bir İlk Yaşanacak
+26-İflas eden ünlü iş insanı hurdacılık yaparken görüntülendi
+27-Altın Sahiplerine Soğuk Duş. Hazırlığa Başlayın
+28-Merkez Bankası'ndan Yeni Döviz Kararı. Dolar Kurunu Altüst Edecek
+29-Koç Ailesine Büyük Darbe. Bir Haftada 150 Milyon Dolar Kaybettiler
+30-Yarından sonra fiyatlar değişti. Bir zam daha geldi
+31-Eşinin aldattığından şüpheleniyordu. Gizli kamera ile eşini kaydeden adam utancından yerin dibine girdi
+32-Perdelerini kapatmayı unutan çiftin rezil olduğu anlar kamerada! Sosyal medyada izlenme rekorları kırdı
+33-Kocasıyla ilişkiye girdiği sırada yanlışlıkla canlı yayın açtı, babası dahil 45 kişi izledi
+34-Meğer onlardan kurtulmak çok kolaymış: Sivrisineklerden jet hızından kurtulmanın tüyosu belli oldu
+35-19 ülkeden 34 kişiyle flört eden gezgin kadın Türkiye'de yaşadıklarını anlattı
+36-Çocuğunuz Bu Ayda Doğmuşsa Dahi Olabilir!
+37-Bu meşrubatı sakın içmeyin, bağışıklık sistemini paramparça yapıyor! Canan Karatay ısrarla uyardı
+38-Sakın Çöpe Atmayın! Değerini Öğrenince Çok Şaşıracaksınız
+39-Ünlü türkücü, Türkiye'yi terk etti! İsviçre'de köy hayatı yaşıyor
+40-Bilenler Nüfus Müdürlüğü'ne Akın Ediyor. Üstelik Bedava Ve Sadece 5 Dakikada İşlem Hallediliyor
+41-T.C Kimlik Numarasını Ezbere Bilenlerin Tamamını İlgilendiriyor
+42-Bildiğiniz duaları unutun. Teravih namazında dağıtılan suların üstündeki not görenleri hayrete düşürdü
+43-Aziz Yıldırım Galatasaray'ı kurtaracak
+44-Fenerbahçe 49 topu kaptı
+45-Muslera'nın zamanı doluyor
+46-Ali Koç ünlü doktoru duyunca ağzı açık kaldı 
+
+Yukarıdaki 46 örnekteki başlıklar, haberlerde birbirinden bağımsız iki konuyu 3-4 kelimeyle, nokta ile ayırıyor. İlk bölümü öznelerin tepkilerine, hareketlerine veya duygularına odaklıyor Bu şekilde okuyucunun dikkatini çekiyor. Yeni yazdığın haberden bu başlık örneklerine benzer 5 adet dikkat çekici ve belirsiz haber başlığı önerisi sun. Nokta ile ayır.
+
+Context: {context}
+
+"""
+
+# Add selection for choosing the prompt, including the new option "HABERİ YENİDEN YAZMA"
 prompt_option = st.radio(
     "Select Prompt:",
-    ("SEO Content Generator", "BİR METİNDEN HABER YAZMA", "BİRDEN FAZLA METİNDEN HABER YAZMA", "KÖŞE YAZISINDAN HABER YAZMA")
+    ("SEO Content Generator", "BİR METİNDEN HABER YAZMA", "BİRDEN FAZLA METİNDEN HABER YAZMA", "KÖŞE YAZISINDAN HABER YAZMA", "HABERİ YENİDEN YAZMA")
 )
 
 # Set default prompt based on the user's selection
 if prompt_option == "SEO Content Generator":
     selected_prompt = seo_content_prompt
+elif prompt_option == "BİR METİNDEN HABER YAZMA":
+    selected_prompt = bir_metinden_haber_prompt
+elif prompt_option == "BİRDEN FAZLA METİNDEN HABER YAZMA":
+    selected_prompt = birden_fazla_metinden_haber_prompt
+elif prompt_option == "KÖŞE YAZISINDAN HABER YAZMA":
+    selected_prompt = kose_yazisindan_haber_prompt
 else:
-    selected_prompt = bir_metinden_haber_prompt if prompt_option == "BİR METİNDEN HABER YAZMA" else \
-                      birden_fazla_metinden_haber_prompt if prompt_option == "BİRDEN FAZLA METİNDEN HABER YAZMA" else \
-                      kose_yazisindan_haber_prompt
+    # If "HABERİ YENİDEN YAZMA" is selected
+    selected_prompt = haberi_yeniden_yazma_prompt
 
 # Initialize a variable to store the user-updated prompt
 updated_prompt = st.text_area("Modify the prompt as needed:", value=selected_prompt, height=500)
@@ -353,7 +384,7 @@ if option == "Tavily Search Results" and prompt_option == "SEO Content Generator
     st.write("Search results will be retrieved based on the topic.")
     
 elif option == "Manual Context Input":
-    manual_context = st.text_area("Enter the context information manually:" , height=500)
+    manual_context = st.text_area("Enter the context information manually:", height=500)
 
 elif option == "Paste URLs":
     urls = st.text_area("Paste up to 5 URLs (separated by commas):").split(',')
@@ -397,7 +428,7 @@ if generate_button:
             else:
                 st.warning("Please enter URLs and a topic to generate SEO content.")
     else:
-        # For non-SEO prompts
+        # For non-SEO prompts, including the new "HABERİ YENİDEN YAZMA"
         if option == "Manual Context Input" and manual_context:
             with st.spinner("Generating content..."):
                 chain = create_non_seo_chain()
