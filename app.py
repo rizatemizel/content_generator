@@ -96,7 +96,11 @@ Spot Cümle (Özet) Oluşturma:
 İçerik Derinliği:
 
 * Kısa paragraflar, liste kullanımı, maddeler ve önemli bilgilerin vurgulanması gibi unsurlar eklenerek içeriğin kullanıcı dostu olmasını sağla.
+* "Ebilecek", "abilecek", "ebilir", "abilir", "mektedir", "maktadır" gibi fiillerden kaçın.  
+* Haberin akışını sağlamak için "ancak", "dolayısıyla", "buna ek olarak" gibi geçiş kelimelerini kullan. 
+* Haberi daha etkili sunabilmek için "dedi", "ifadelerini kullandı", "söyledi", "vurguladı", "aktardı", "diye yazdı", "dile getirdi", "açıkladı", "belirtti", "öne çıkardı", "altını çizdi", "şu sözlere yer verdi", "değindi", "işaret etti", "şunu kaydetti", "gündeme taşıdı" gibi ifadeleri konuşma, beyan ve demeç bölümlerinde sıkça kullan.
 * İçerikte yalnızca yüzeysel bilgilerle yetinme; konuyu detaylı ve kapsamlı bir şekilde ele al.
+* İçerik derinliğini artırmak için uzman görüşlerine veya güvenilir kaynaklara dayalı alıntılar ekle.
 * Anahtar kelimenin doğal bir şekilde yer aldığı ve konuyu derinlemesine açıklayan paragraflar oluştur.
 * İçeriğin kullanıcı sorularına tatmin edici ve çözüm odaklı yanıtlar verdiğinden emin ol.
 * Destekleyici örnekler, istatistikler veya araştırma sonuçları ekleyerek içeriğin güvenilirliğini artır.
