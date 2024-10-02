@@ -75,39 +75,33 @@ seo_content_prompt = """
 Sana verilen contexti kullanarak istenen konu hakkında SEO içerik üretmen bekleniyor.
 Türkçe düzgün kullanılmalı, ve profosyonel bir dili olmalı.
 
-BAŞLIK
+Başlık Belirleme:
 
-Kısa, ilgi çekici ve anahtar kelime içeren bir başlık yaz. 8 kelimeyi geçmeyecek şekilde oluşturulmalıdır.
+* Soruya yanıt olarak, anahtar kelimeyi içeren ve dikkat çekici bir başlık oluştur. Başlığı 50-60 karakteri geçmeyecek şekilde düzenle.
 
-SPOT
+Spot Cümle (Özet) Oluşturma:
 
-"XXXXXX XXXXXX kimdir? XXXXXX XXXXXX kaç yaşında? XXXXXX XXXXXX evli mi?" kelime grubunu içeren, en fazla 12 kelimelik cümleler yaz. Spot 400 harfi geçmemelidir. Haberle ilgili merak uyandırmalı ama içeriği açık etmemelidir.
+* Soruya kısa ve öz bir yanıt vererek bu yanıtı meta açıklama formatında (150-160 karakter) yaz. Spot cümleyi, anahtar kelimeyi içerecek ve okuyucuyu içeriği okumaya teşvik edecek şekilde oluştur. Kullanıcının sayfada ne bulacağını net bir şekilde anlat. Şuna benzer "Daha fazla bilgi için tıklayın" ifadeler ekle.
 
-SEO GİRİŞ
+İçerik Oluşturma:
 
-"XXXXXX XXXXXX kimdir? XXXXXX XXXXXX kaç yaşında? XXXXXX XXXXXX evli mi?" kelime grubunu kullanarak, en az 300 harften oluşan bir giriş yaz. Okuyucuyu çeken, dikkat çekici ve anekdot içeren bir metin olsun.
+* İçeriğin giriş, gelişme ve sonuç bölümlerini mantıklı bir sıralamayla yapılandır. Anahtar kelimenin doğal bir şekilde içerikte kullanılmasını sağla. İçeriği mantıklı bölümlere ayır ve alt başlıklar (H2, H3) ekle. Alt başlıklar anahtar kelimeleri barındırsın.
 
-SEO METNİ
+İçerik Uzunluğu ve Derinliği Talimatları:
 
-"XXXXXX XXXXXX kimdir? XXXXXX XXXXXX kaç yaşında? XXXXXX XXXXXX evli mi?" sorusuna 700 kelimelik bir yanıt ver. Metni özgünleştir, intihalden arındır. Cümleleri 12 kelimeyi geçmemeli. Paragrafları kısa tutmalısın.
+İçerik Uzunluğu:
 
-SEO
+* İçeriğin uzunluğu, en az 1000 kelime olmalıdır. Bu, SEO açısından minimum gereksinimi karşılar.
 
-Anahtar kelimeleri doğal bir şekilde metne yerleştir. Anahtar kelimeleri içeren dikkat çekici başlıklar ve alt başlıklar oluştur. SEO dostu, anahtar kelimeler içeren ve kullanıcıyı çeken bir açıklama yaz. İç ve dış bağlantılar ekleyerek SEO performansını artır. Görseller ekle, alt metinlerinde anahtar kelimeleri kullan. İçeriği güncel tut.
+İçerik Derinliği:
 
-GEÇİŞ
-
-"Buna ek olarak," "ancak," "dolayısıyla," "öte yandan" gibi geçiş kelimelerini kullan.
-
-ALINTILAR
-
-Konuşma ve açıklamalarda "dedi," "vurguladı," "belirtti" gibi ifadeleri sıkça kullan.
-
-METİN DÜZENİ
-
-"XXXXXX XXXXXX kimdir? XXXXXX XXXXXX kaç yaşında? XXXXXX XXXXXX evli mi?" ifadesini en az iki kez tekrar et.
-
-Bu adımlara sadık kalarak metni oluştur.
+* Kısa paragraflar, liste kullanımı, maddeler ve önemli bilgilerin vurgulanması gibi unsurlar eklenerek içeriğin kullanıcı dostu olmasını sağla.
+* İçerikte yalnızca yüzeysel bilgilerle yetinme; konuyu detaylı ve kapsamlı bir şekilde ele al.
+* Anahtar kelimenin doğal bir şekilde yer aldığı ve konuyu derinlemesine açıklayan paragraflar oluştur.
+* İçeriğin kullanıcı sorularına tatmin edici ve çözüm odaklı yanıtlar verdiğinden emin ol.
+* Destekleyici örnekler, istatistikler veya araştırma sonuçları ekleyerek içeriğin güvenilirliğini artır.
+* Okuyucuyu içeriğe bağlayacak etkili argümanlar ve görüşler sun; ancak tüm bunlar tarafsız olsun.
+* İçeriğin sonuna doğru, konuyu toparlayarak okuyucuyu net bir sonuç ile baş başa bırak. Kullanıcıyı yönlendirecek açık bir çağrı yap.
 
 Context: {context}
 
